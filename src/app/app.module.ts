@@ -9,12 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { DepositRefundComponent } from './deposit-refund/deposit-refund.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormSubmitComponent } from './form-submit/form-submit.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'deposit-refunds', component: DepositRefundComponent },
   {path: 'about-us', component: AboutUsComponent },
   {path: 'contact', component: ContactComponent },
+  {path: 'confirm', component: FormSubmitComponent },
 ]
 
 
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     HomeComponent,
     DepositRefundComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    FormSubmitComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: false}),
