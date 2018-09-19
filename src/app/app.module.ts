@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { ParseService } from './parse.service';
 
 import { AppComponent } from './app.component';
@@ -26,8 +27,9 @@ const appRoutes: Routes = [
     ContactComponent
   ],
   imports: [
-    RouterModule.forRoot(appRoutes, {enableTracing: true}),
-    BrowserModule
+    RouterModule.forRoot(appRoutes, {enableTracing: false}),
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     ParseService

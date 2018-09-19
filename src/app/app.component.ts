@@ -11,18 +11,6 @@ export class AppComponent {
   title = 'app';
   categories = [];
 
-  constructor(private parseService: ParseService) {
-    this.listCategories();
-  }
-
-  listCategories(): Promise<any> {
-    return this.parseService.listCategories().then(
-      (result) => {
-        console.log(result);
-      }, (error) => {
-        console.log(error);
-      }
-    );
-  }
+  constructor() {}
 
 }

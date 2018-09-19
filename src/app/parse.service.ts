@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Parse } from 'parse';
 import 'rxjs/add/operator/map';
+import { resolve } from 'path';
+import { reject } from 'q';
 
 @Injectable()
 
 export class ParseService {
-  private parseAppId: String = "75ffb5738ff65d5cfb6efbdd1293e484d99e2693";
-  private parseServerUrl: string = "https://parse.danimos-pizza-takeaway.davidbarszczak.com/parse";
+  private parseAppId: String = "4PMEV5S4M2XDFHQO2GIIKVKD7J3JJE8DNEZDOOHQ9QALMIRXZ7PXRR7J2G8B67UTYXD3EFZWZFII81FX53WKTWNQY7IHHYNQ4FB";
+  private parseServerUrl: string = "https://jdstudios-forms.davidbarszczak.com/parse";
 
   constructor() {
     this.parseInitialize();
@@ -19,13 +21,17 @@ export class ParseService {
   }
 
   /* Application Helpers */
-  listCategories(): Promise<any> {
-    return new Promise((resolve, reject) => {
+  newForm() {
+    const Form = Parse.Object.extend("OffPlan");
+    const form = new Form();
+    return form;
+  }
+
+  saveForm(form): Promise<any> {
+    return new Promise((resolve,reject) => {
       setTimeout(() => {
-        const Category = Parse.Object.extend("Category");
-        let query = new Parse.Query(Category);
-        query.find().then(function(categories) {
-          resolve(categories);
+        form.save().then(function(form) {
+          resolve(form);
         }, (error) => {
           reject(error);
         });

@@ -28,7 +28,7 @@
             <label for="contactName">Name</label>
             <div class="input-group mb-3">
                 <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                <input type="text" class="form-control" id="contactName" placeholder="Name">
+                <input [(ngModel)]="contactName" type="text" class="form-control" name="contactName" placeholder="Name">
             </div>
           </div>
 
@@ -36,7 +36,7 @@
               <label for="contactEmail">Email Address</label>
               <div class="input-group mb-3">
                 <div class="input-group-addon">@</div>
-                <input type="text" class="form-control" id="contactEmail" placeholder="Email">
+                <input [(ngModel)]="contactEmail" type="text" class="form-control" name="contactEmail" placeholder="Email">
               </div>
           </div>
 
@@ -44,12 +44,12 @@
             <label for="contactNumber">Contact Number</label>
             <div class="input-group mb-3">
               <div class="input-group-addon"><i class="fa fa-phone"></i></div>
-              <input type="text" class="form-control" id="contactNumber" placeholder="Phone">
+              <input [(ngModel)]="contactNumber" type="text" class="form-control" name="contactNumber" placeholder="Phone">
             </div>
           </div>
 
           <div class="form-group">
-              <button type="button" class="btn btn-primary btn-block">Submit</button>
+              <button (click)="submitButton()" type="button" class="btn btn-primary btn-block">Submit</button>
           </div>
           
         </form>
