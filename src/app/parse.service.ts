@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Parse } from 'parse';
 import 'rxjs/add/operator/map';
-import { resolve } from 'path';
-import { reject } from 'q';
 
 @Injectable()
 
