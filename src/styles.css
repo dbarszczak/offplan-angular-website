@@ -55,14 +55,14 @@ body {
 }
 
 .banner-full {
-    background-image: url('assets/header-full.png');
+    background-image: url('assets/deposit-refund-header.png');
     background-position: center;
     height:500px;
     z-index: 1;
 }
 
 .banner-short {
-    background-image: url('assets/header-full.png');
+    background-image: url('assets/deposit-refund-header.png');
     background-position: center;
     height:300px;
     z-index: 1;
