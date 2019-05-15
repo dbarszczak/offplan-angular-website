@@ -1,63 +1,63 @@
-<div class="container banner-container">
-  <div class="banner-full"></div>
+<div class="row banner-short">
+
 </div>
 
+<div class="row justify-content-center content-block">
+  <div class="col-11 content content-first center-text">
+    <h3>Contact us today!</h3>
+  </div>
+</div>
 
-<div class="container">
-
-  <div class="container-width">
-    <div class="container bullets-container">
-      <div class="bullets">
-        <div class="container points-container">
-          <div class="point">
-            <h3>Contact us today!</h3>
+<div class="row justify-content-center content-block">
+  <div class="col-11 content">
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="contactName"><i class="fa fa-user"></i></span>
+            </div>
+            <input [(ngModel)]="contactName" name="contactName" id="contactName" type="text" class="form-control"
+              placeholder="Name" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container content-container">
-      <div class="message">
-        <p>During the boom years, thousands of people purchased holiday or permanet homes  "Off-Plan" throughout Spain from Spanish developers.</p>
-        <p>Unfortunately due to the worldwide recessions, developers failed to complete construction due to running out of money, or in some cases entering into Liquidation or Bankruptcy. Either situation left purchasers in the unenviable position of not knowing what happened to their "Deposit Money"</p>
-        <p>Many Purchasers believed that if the developer entered into liquidation or was forced into Bankruptcy, they would have no chance of reclaiming their lost deposits.</p>
-        <p>This is simply not the case. We specialise in getting these deposits back for our customers.</p>
-        <p>Our dedicated team of Lawyers whose offices are based on THE COSTA DEL SOL, have to date been 100% successful in reclaiming clients lost deposits.</p>
-        <p>Our Lawyers will diligently pursue your case through the Spanish Courts to reclaim your lost deposits.</p>
-
-
-        <form>
-          <div class="form-group">
-            <label for="contactName">Name</label>
-            <div class="input-group mb-3">
-                <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                <input [(ngModel)]="contactName" type="text" class="form-control" name="contactName" placeholder="Name" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-              <label for="contactEmail">Email Address</label>
-              <div class="input-group mb-3">
+      <div class="form-row">
+        <div class="col">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="contactEmail">
                 <div class="input-group-addon">@</div>
-                <input [(ngModel)]="contactEmail" type="text" class="form-control" name="contactEmail" placeholder="Email" required>
-              </div>
-          </div>
-
-          <div class="form-group">
-            <label for="contactNumber">Contact Number</label>
-            <div class="input-group mb-3">
-              <div class="input-group-addon"><i class="fa fa-phone"></i></div>
-              <input [(ngModel)]="contactNumber" type="text" class="form-control" name="contactNumber" placeholder="Phone" required>
+              </span>
+            </div>
+            <input [(ngModel)]="contactEmail" name="contactEmail" id="contactEmail" type="text" class="form-control"
+              placeholder="Email Address" required>
+            <div class="invalid-feedback">
+              Please choose a username.
             </div>
           </div>
-
-          <div class="form-group">
-              <button (click)="submitButton()" type="button" class="btn btn-primary btn-block">Submit</button>
-          </div>
-          
-        </form>
+        </div>
       </div>
-    </div>
+      <div class="form-row">
+        <div class="col">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="contactNumber"><i class="fa fa-phone"></i></span>
+            </div>
+            <input [(ngModel)]="contactNumber" name="contactNumber" id="contactNumber" type="text" class="form-control"
+              placeholder="Comtact Number" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="submitButton()" type="button" class="btn btn-primary btn-block">Submit</button>
+      </div>
+    </form>
   </div>
-
 </div>

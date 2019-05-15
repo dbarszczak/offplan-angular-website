@@ -1,57 +1,77 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126139194-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-126139194-1');
+        gtag('config', 'UA-126139194-1');
     </script>
-<meta charset="utf-8">
-<title>OffPlanProperty</title>
-<base href="/">
+    <meta charset="utf-8">
+    <title>OffPlanProperty</title>
+    <base href="/">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
-  <!-- Bootstrap core CSS-->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template-->
+    <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
+
 <body>
-<div class="container topbar-container">
-    <div class="topbar">
-        <div >
-            <h1>Off Plan Property Development Refunds</h1>
+
+    <div class="container">
+        <div class="row justify-content-between topbar">
+
+            <div class="col-sm-6 center-text">
+                <div class="row justify-content-start">
+                    <div class="col-md-auto align-self-center">
+                        <img class="center-image" src="/assets/logo.png">
+                    </div>
+                    <div class="col-md-auto align-self-center">
+                        <strong>Plan Property Development Refunds</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 center-text">
+                <div class="row justify-content-end menu">
+                    <div class="col-md-auto align-self-center">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="col-md-auto align-self-center">
+                        <a href="deposit-refunds">Deposit Refunds</a>
+                    </div>
+                    <div class="col-md-auto align-self-center">
+                        <a href="contact">Contact</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div>
-            <div class="menu">
-                <a href="">Home</a> | 
-                <a href="deposit-refunds">Deposit Refunds</a> | 
-                <!-- <a href="about-us">About Us</a> | -->
-                <a href="contact">Contact</a>
-            </div>
-        </div>                
+
+        <app-root></app-root>
+
+
+        <div class="row footer text-center">
+            <p style="color: #ffffff; padding: 16px; width:100%">
+                Off-Plan Property Deposit Refunds S.L.<br />
+                Avd Luis Braille S/N 1ª Planta Oficina 6<br />
+                C.P. 29680 Estepona - Málaga, Spain<br />
+                <i class="fa fa-envelope"> info@o-ppdr.com</i>
+            </p>
+        </div>
     </div>
 
-</div>
-
-<app-root></app-root>
-
-<div class="container topbar-container">
-    <div class="topbar point-description" style="align-items: center">
-    <p style="color: #ffffff; padding: 16px; width:100%">
-        Off-Plan Property Deposit Refunds S.L.<br />
-        Avd Luis Braille S/N 1ª Planta Oficina 6<br />
-        C.P. 29680 Estepona - Málaga, Spain<br />
-        <i class="fa fa-envelope"> info@o-ppdr.com</i>
-    </p>
-</div>
-
 </body>
+
 </html>
